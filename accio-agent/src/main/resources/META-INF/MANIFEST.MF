@@ -1,0 +1,2 @@
+Manifest-Version: 0.1
+Premain-Class: com.epocharch.accio.AccioAgent

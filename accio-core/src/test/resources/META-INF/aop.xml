@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aspectj PUBLIC
+        "-//AspectJ//DTD//EN"
+        "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+
+    <aspects>
+        <!--&lt;!&ndash;<aspect name="com.yhd.arch.aspectj.MethodTestAspect"/>&ndash;&gt;-->
+        <concrete-aspect name="com.epocharch.accio.aspect.sIAccioRPCAspect"
+                         extends="com.epocharch.accio.aspect.IAccioRPCClientAspect">
+            <pointcut name="sender" expression="execution(* com.yhd.arch.awear.LTWBean.run(..))"/>
+        </concrete-aspect>
+
+    </aspects>
+
+    <weaver options="-verbose">
+
+        <include within="com.yhd.arch.beans.A"/>
+        <include within="com.yhd.arch.awear.LTWBean" />
+        <include within="com.yhd.arch.aspectj.*"/>
+    </weaver>
+
+</aspectj>
