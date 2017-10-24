@@ -6,7 +6,17 @@
 
 # BlueJ files
 *.ctxt
+
+# IntellijIdea project files
+.idea/
 *.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+com_crashlytics_export_strings.xml
+*/target
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
